@@ -1,5 +1,8 @@
 package ucr.ac.ecci.ci1322.laboratorio1.model;
 
+/**
+ * Class that represents a book.
+ */
 public class Book {
 
     private String code;
@@ -7,18 +10,18 @@ public class Book {
     private String title;
     private String genre;
 
+    /**
+     * Class constructor
+     * @param code
+     * @param author
+     * @param title
+     * @param genre
+     */
     public Book(String code, String author, String title, String genre) {
         this.code = code;
         this.author = author;
         this.title = title;
         this.genre = genre;
-    }
-
-    public Book(){
-        this.code = "";
-        this.author = "";
-        this.title = "";
-        this.genre = "";
     }
 
     public String getCode() {

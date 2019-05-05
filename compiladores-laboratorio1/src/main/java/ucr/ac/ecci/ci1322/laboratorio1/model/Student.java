@@ -1,35 +1,30 @@
 package ucr.ac.ecci.ci1322.laboratorio1.model;
 
+/**
+ * Class that represents a student
+ */
 public class Student {
 
-    private String studenId;
+    private String studentId;
     private String id;
     private String lastName;
     private String firstName;
     private String email;
 
-    public Student(String studenId, String id, String lastName, String firstName, String email) {
-        this.studenId = studenId;
+    public Student(String studentId, String id, String lastName, String firstName, String email) {
+        this.studentId = studentId;
         this.id = id;
         this.lastName = lastName;
         this.firstName = firstName;
         this.email = email;
     }
 
-    public Student() {
-        this.studenId = "";
-        this.id = "";
-        this.lastName = "";
-        this.firstName = "";
-        this.email = "";
+    public String getStudentId() {
+        return studentId;
     }
 
-    public String getStudenId() {
-        return studenId;
-    }
-
-    public void setStudenId(String studenId) {
-        this.studenId = studenId;
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
     }
 
     public String getId() {
