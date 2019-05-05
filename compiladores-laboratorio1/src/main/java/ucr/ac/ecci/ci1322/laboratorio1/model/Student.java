@@ -3,12 +3,12 @@ package ucr.ac.ecci.ci1322.laboratorio1.model;
 public class Student {
 
     private String studenId;
-    private int id;
+    private String id;
     private String lastName;
     private String firstName;
     private String email;
 
-    public Student(String studenId, int id, String lastName, String firstName, String email) {
+    public Student(String studenId, String id, String lastName, String firstName, String email) {
         this.studenId = studenId;
         this.id = id;
         this.lastName = lastName;
@@ -18,7 +18,7 @@ public class Student {
 
     public Student() {
         this.studenId = "";
-        this.id = 0;
+        this.id = "";
         this.lastName = "";
         this.firstName = "";
         this.email = "";
@@ -32,11 +32,11 @@ public class Student {
         this.studenId = studenId;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

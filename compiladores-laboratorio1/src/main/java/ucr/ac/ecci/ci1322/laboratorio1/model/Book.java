@@ -2,12 +2,12 @@ package ucr.ac.ecci.ci1322.laboratorio1.model;
 
 public class Book {
 
-    private int code;
+    private String code;
     private String author;
     private String title;
     private String genre;
 
-    public Book(int code, String author, String title, String genre) {
+    public Book(String code, String author, String title, String genre) {
         this.code = code;
         this.author = author;
         this.title = title;
@@ -15,17 +15,17 @@ public class Book {
     }
 
     public Book(){
-        this.code = 0;
+        this.code = "";
         this.author = "";
         this.title = "";
         this.genre = "";
     }
 
-    public int getCode() {
+    public String getCode() {
         return code;
     }
 
-    public void setCode(int code) {
+    public void setCode(String code) {
         this.code = code;
     }
 
